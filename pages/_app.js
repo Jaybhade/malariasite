@@ -1,6 +1,6 @@
 import "../styles/globals.css";
 import useMediaQuery from "../hooks/useMediaQuery";
-
+import Navbar_pc from "../components/navbar_pc";
 function MyApp({ Component, pageProps }) {
   const breakpoint = 991;
   const size = useMediaQuery(breakpoint);
@@ -15,6 +15,7 @@ function MyApp({ Component, pageProps }) {
 
   return (
     <div>
+       <Navbar_pc/>
       <Component {...pageProps} />
     </div>
   );
